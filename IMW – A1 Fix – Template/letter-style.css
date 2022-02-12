@@ -1,0 +1,290 @@
+.letter {
+
+  width: 212.5px; /*resize as you see fit */
+  height: 391px; /*resize as you see fit */
+  display: inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border: 1px solid #000; /*feel free to remove or hide this rule */
+  position: relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+  overflow: hidden;
+}
+
+/* LETTER COMPONENTS */
+/* space in between vertical strokes must be 30.5px */
+#vertical-left {
+  background-color: #000000;
+  width: 30.5px;
+  height: 210px;
+  position: absolute;
+  left: 0px;
+  top: 45.5px;
+}
+
+#vertical-right {
+  background-color: #000000;
+  width: 30.5px;
+  height: 210px;
+  position: absolute;
+  left: 61px;
+  top: 45.5px;
+}
+
+/* Moon @ https://css-tricks.com/the-shapes-of-css/ */
+/* Moon width & height should be 91px */
+#apex-left {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px;
+  top: 0px;
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#apex-right {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -29.5px;
+  top: 0px;
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#leg-left {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px;
+  top: -45.5px; /* to account for .leg-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#leg-right {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 91.5px;
+  top: -45.5px; /* to account for .leg-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#leg-right-reversed {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -29.5px;
+  top: -45.5px; /* to account for .leg-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#crossbar {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px;
+  top: 0px; /* to account for .crossbar-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#ear-left {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px;
+  top: 0px;
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#vertical-ear {
+  background-color: #000000;
+  width: 30.5px;
+  height: 210px;
+  position: absolute;
+  left: 30px;
+  top: 45.5px;
+}
+
+#middle-bottom {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px; /* to account for .middle-bottom-hidden */
+  top: 0px; /* to account for .middle-bottom-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#vertical-right-top {
+  background-color: #000000;
+  width: 30.5px;
+  height: 88.5px;
+  position: absolute;
+  left: 91px;
+  top: 45.5px;
+}
+
+#vertical-right-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 37px;
+  position: absolute;
+  left: 91px;
+  top: 218px;
+}
+
+#middle-top {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px; /* to account for .middle-bottom-hidden */
+  top: -43.5px; /* to account for .middle-bottom-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#vertical-d {
+  background-color: #000000;
+  width: 30.5px;
+  height: 210px;
+  position: absolute;
+  left: 91px;
+  top: 45.5px;
+}
+
+#vertical-m {
+  background-color: #000000;
+  width: 30.5px;
+  height: 210px;
+  position: absolute;
+  left: 152px;
+  top: 45.5px;
+}
+
+#leg-m {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 152.5px;
+  top: -45.5px; /* to account for .leg-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+
+
+
+/* OVERFLOW:HIDDEN @ https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
+/* using OVERFLOW:HIDDEN instead of whiteout shapes to hide excess */
+.apex-hidden {
+  height: 45.5px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+}
+
+.leg-hidden {
+  height: 45.5px;
+  width: 122px;
+  position: absolute;
+  left: 0px;
+  top: 255px;
+  overflow: hidden;
+}
+
+.crossbar-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 173px;
+}
+
+.ear-hidden {
+  height: 45.5px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+}
+
+.b-apex-hidden {
+  height: 45.5px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 30px;
+  top: 0px;
+}
+
+.b-bottom-hidden {
+  height: 45.5px;
+  width: 122px;
+  position: absolute;
+  left: 30px;
+  top: 255px;
+  overflow: hidden;
+}
+
+.middle-bottom-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 61px;
+  top: 173px;
+}
+
+.middle-top-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 61px;
+  top: 131px;
+}
+
+.h-leg-hidden {
+  height: 45.5px;
+  width: 182px;
+  position: absolute;
+  left: 30px;
+  top: 255px;
+  overflow: hidden;
+}
+
+.h-crossbar-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 30px;
+  top: 173px;
+}
+
+.m-apex-hidden {
+  height: 45.5px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 91px;
+  top: 0px;
+}

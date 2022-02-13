@@ -8,6 +8,8 @@
   overflow: hidden;
 }
 
+
+
 /* LETTER COMPONENTS */
 /* space in between vertical strokes must be 30.5px */
 #vertical-left {
@@ -287,6 +289,130 @@
   transform: rotate(-225deg);
 }
 
+#tail-top {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px; /* to account for tail-top-hidden */
+  top: 0px;
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#tail-bottom {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 81px; /* to account for tail-bottom-hidden */
+  top: -45.5px;
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#c-curve {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px; /* to account for .c-curve-hidden */
+  top: 0px; /* to account for .c-curve-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#vertical-c-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 37px;
+  position: absolute;
+  left: 61px;
+  top: 218px;
+}
+
+#vertical-y {
+  background-color: #000000;
+  width: 30.5px;
+  height: 88.5px;
+  position: absolute;
+  left: 30px;
+  top: 45.5px;
+}
+
+#middle-y {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 60.5px; /* to account for .middle-bottom-hidden */
+  top: -43.5px; /* to account for .middle-bottom-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#bottom-left-y {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 60.5px;
+  top: 0px; /* to account for .leg-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#vertical-left-y {
+  background-color: #000000;
+  width: 30.5px;
+  height: 37px;
+  position: absolute;
+  left: 30px;
+  top: 218px;
+}
+
+#g-spur {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px; /* to account for .g-spur-hidden */
+  top: -45.5px; /* to account for .g-spur-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#g-middle-spur {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px; /* to account for .g-spur-hidden */
+  top: 10px; /* to account for .g-spur-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#g-curve {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  left: -45.5px; /* to account for .c-curve-hidden */
+  top: -40px; /* to account for .c-curve-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#vertical-g {
+  background-color: #000000;
+  width: 30.5px;
+  height: 90px;
+  position: absolute;
+  left: 61px;
+  top: 169px;
+}
+
 
 
 /* Moon Whiteouts within the letter */
@@ -319,6 +445,28 @@
   position: absolute;
   left: -32px;
   top: 3.5px;
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-45deg);
+}
+
+#whiteout-c {
+  width: 96px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -62.5px;
+  top: 3.5px;
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-45deg);
+}
+
+#whiteout-c-curve {
+  width: 90.6px;
+  height: 95px;
+  border-radius: 50%;
+  position: absolute;
+  left: -92px; /* to account for .c-curve-hidden */
+  top: -10px; /* to account for .c-curve-hidden */
   box-shadow: 21.6px 21.6px 0 0 #ffffff;
   transform: rotate(-45deg);
 }
@@ -460,4 +608,76 @@
   overflow: hidden;
   left: 61px;
   top: 131px;
+}
+
+.tail-top-hidden {
+  height: 45.3px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 290px;
+}
+
+.tail-bottom-hidden {
+  height: 45.3px;
+  width: 122px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 335.5px;
+}
+
+.c-curve-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 31px;
+  top: 173px;
+}
+
+.middle-y-hidden {
+  height: 60px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 131px;
+}
+
+.bottom-left-y-hidden {
+  height: 45.5px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 172.5px;
+}
+
+.g-spur-hidden {
+  height: 45.5px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: 61px;
+  top: 255px;
+}
+
+.g-middle-spur-hidden {
+  height: 35px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: 59.5px;
+  top: 133.5px;
+}
+
+.g-curve-hidden {
+  height: 35px;
+  width: 59px;
+  position: absolute;
+  overflow: hidden;
+  left: 37px;
+  top: 168px;
 }

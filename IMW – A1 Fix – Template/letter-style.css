@@ -413,6 +413,61 @@
   top: 169px;
 }
 
+#crossbar-s {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 28px;
+  top: -60px; /* to account for .s-crossbar-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#vertical-left-s {
+  background-color: #000000;
+  width: 30.5px;
+  height: 85.5px;
+  position: absolute;
+  left: 0px;
+  top: 45.5px;
+}
+
+#vertical-9 {
+  background-color: #000000;
+  width: 30.5px;
+  height: 88.5px;
+  position: absolute;
+  left: 0px;
+  top: 45.5px;
+}
+
+#vertical-8 {
+  background-color: #000000;
+  width: 30.5px;
+  height: 88.5px;
+  position: absolute;
+  left: 61px;
+  top: 45.5px;
+}
+#vertical-8-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 37px;
+  position: absolute;
+  left: 0px;
+  top: 218px;
+}
+
+#vertical-s-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 52.5px;
+  position: absolute;
+  left: 61px;
+  top: 202.5px;
+}
+
 
 
 /* Moon Whiteouts within the letter */
@@ -680,4 +735,58 @@
   overflow: hidden;
   left: 37px;
   top: 168px;
+}
+
+.s-crossbar-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 131px;
+}
+
+.middle-9-hidden {
+  height: 60px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: -30px;
+  top: 131px;
+}
+
+.middle-8-hidden {
+  height: 60px;
+  width: 91px;
+  position: absolute;
+  overflow: hidden;
+  left: -30px;
+  top: 173px;
+}
+
+.middle-8-hidden {
+  height: 45.5px;
+  width: 122px;
+  position: absolute;
+  left: 0px;
+  top: 131px;
+  overflow: hidden;
+}
+
+.i-hidden {
+  height: 45.5px;
+  width: 91.5px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+}
+
+.s-curve-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 31px;
+  top: 157px;
 }

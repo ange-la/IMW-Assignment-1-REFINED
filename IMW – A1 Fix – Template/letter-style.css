@@ -427,7 +427,7 @@
 #vertical-left-s {
   background-color: #000000;
   width: 30.5px;
-  height: 85.5px;
+  height: 90.5px;
   position: absolute;
   left: 0px;
   top: 45.5px;
@@ -436,7 +436,7 @@
 #vertical-9 {
   background-color: #000000;
   width: 30.5px;
-  height: 88.5px;
+  height: 91px;
   position: absolute;
   left: 0px;
   top: 45.5px;
@@ -445,11 +445,12 @@
 #vertical-8 {
   background-color: #000000;
   width: 30.5px;
-  height: 88.5px;
+  height: 91px;
   position: absolute;
   left: 61px;
   top: 45.5px;
 }
+
 #vertical-8-bottom {
   background-color: #000000;
   width: 30.5px;
@@ -462,10 +463,37 @@
 #vertical-s-bottom {
   background-color: #000000;
   width: 30.5px;
-  height: 52.5px;
+  height: 47.5px;
   position: absolute;
   left: 61px;
-  top: 202.5px;
+  top: 207.5px;
+}
+
+#vertical-left-s-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 27px;
+  position: absolute;
+  left: 0px;
+  top: 228px;
+}
+
+#vertical-3 {
+  background-color: #000000;
+  width: 30.5px;
+  height: 58px;
+  position: absolute;
+  left: 61px;
+  top: 45.5px;
+}
+
+#vertical-3-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 67px;
+  position: absolute;
+  left: 61px;
+  top: 188px;
 }
 
 
@@ -524,6 +552,28 @@
   top: -10px; /* to account for .c-curve-hidden */
   box-shadow: 21.6px 21.6px 0 0 #ffffff;
   transform: rotate(-45deg);
+}
+
+#whiteout-3 {
+  width: 96px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 58px;
+  top: 0px;
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-225deg);
+}
+
+#whiteout-crossbar {
+  width: 96px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 60px;
+  top: -10px;
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-225deg);
 }
 
 
@@ -743,7 +793,7 @@
   position: absolute;
   overflow: hidden;
   left: 0px;
-  top: 131px;
+  top: 136px;
 }
 
 .middle-9-hidden {
@@ -752,16 +802,8 @@
   position: absolute;
   overflow: hidden;
   left: -30px;
-  top: 131px;
-}
-
-.middle-8-hidden {
-  height: 60px;
-  width: 91px;
-  position: absolute;
+  top: 132.5px;
   overflow: hidden;
-  left: -30px;
-  top: 173px;
 }
 
 .middle-8-hidden {
@@ -769,7 +811,7 @@
   width: 122px;
   position: absolute;
   left: 0px;
-  top: 131px;
+  top: 133.5px;
   overflow: hidden;
 }
 
@@ -788,5 +830,32 @@
   position: absolute;
   overflow: hidden;
   left: 31px;
-  top: 157px;
+  top: 162px;
+}
+
+.s-bottom-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 183px;
+}
+
+.curve-hidden-3 {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 31px;
+  top: 143px;
+}
+
+.middle-3-hidden {
+  height: 45.5px;
+  width: 122px;
+  position: absolute;
+  left: 0px;
+  top: 103.5px;
+  overflow: hidden;
 }

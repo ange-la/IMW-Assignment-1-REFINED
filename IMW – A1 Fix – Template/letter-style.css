@@ -496,6 +496,66 @@
   top: 188px;
 }
 
+#vertical-right-z {
+  background-color: #000000;
+  width: 30.5px;
+  height: 90.5px;
+  position: absolute;
+  left: 61px;
+  top: 45.5px;
+}
+
+#crossbar-z {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px;
+  top: -60px; /* to account for .z-crossbar-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
+#z-curve {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30.5px; /* to account for .z-curve-hidden */
+  top: 0px; /* to account for .z-curve-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-225deg);
+}
+
+#vertical-z-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 47.5px;
+  position: absolute;
+  left: 0px;
+  top: 207.5px;
+}
+
+#vertical-right-z-bottom {
+  background-color: #000000;
+  width: 30.5px;
+  height: 27px;
+  position: absolute;
+  left: 61px;
+  top: 228px;
+}
+
+#bottom-z {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60.5px;
+  top: 0px; /* to account for .crossbar-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #000000;
+  transform: rotate(-45deg);
+}
+
 
 
 /* Moon Whiteouts within the letter */
@@ -572,6 +632,28 @@
   position: absolute;
   left: 60px;
   top: -10px;
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-225deg);
+}
+
+#whiteout-z {
+  width: 95px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -95px; /* to account for .z-bottom-hidden */
+  top: -7px; /* to account for .z-bottom-hidden */
+  box-shadow: 21.6px 21.6px 0 0 #ffffff;
+  transform: rotate(-45deg);
+}
+
+#whiteout-7 {
+  width: 90.6px;
+  height: 90.6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 58px;
+  top: 2px;
   box-shadow: 21.6px 21.6px 0 0 #ffffff;
   transform: rotate(-225deg);
 }
@@ -858,4 +940,31 @@
   left: 0px;
   top: 103.5px;
   overflow: hidden;
+}
+
+.z-crossbar-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 33.5px;
+  top: 136px;
+}
+
+.z-curve-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 162px;
+}
+
+.z-bottom-hidden {
+  height: 45.5px;
+  width: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 31px;
+  top: 183px;
 }
